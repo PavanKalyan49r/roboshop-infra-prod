@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "pavanaws-remote-dev"
+    bucket = "pavanaws-remote-prod"
     key    = "app-alb"
     region = "us-east-1"
-    dynamodb_table = "pavanaws-locking-dev"
+    dynamodb_table = "pavanaws-locking-prod"
   }
 }
 
